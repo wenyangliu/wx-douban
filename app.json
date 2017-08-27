@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/coming/coming",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#268DCD",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#268DCD",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "正在热映",
+      "iconPath": "image/ing.png",
+      "selectedIconPath": "image/ing-active.png"
+    },
+    {
+      "pagePath":"pages/coming/coming",
+      "text": "即将上映",
+      "iconPath": "image/coming.png",
+      "selectedIconPath": "image/coming-active.png"
+    }
+    ]
+  }
+}

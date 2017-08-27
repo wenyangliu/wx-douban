@@ -1,0 +1,43 @@
+<view class="page">
+  <view class="">
+    <view class="mod-list">
+      <view class="left2">
+        <image src="{{list.images.large}}"></image>
+      </view>
+      <view class="right2">
+        <view class="row title">
+					{{list.title}}
+				</view>
+				<view class="row">
+          <view>评分：</view>
+          <view style="color:orange" class="">{{item.rating.average}}</view>
+				</view>
+				<view class="row">
+					<view class="tag">导演：</view> <view class="casts" wx:for="{{list.directors}}" wx:for-item="d">
+						 {{d.name}}
+					</view>
+				</view>
+				<view class="row">
+					<view class="tag">主演：</view>
+            <view class="casts" wx:for="{{list.casts}}" wx:for-item="c">
+              {{c.name}}
+            </view>
+				</view>
+        <view class="row">
+					<view class="tag">类型：</view><view class="casts" wx:for="{{list.genres}}" wx:for-item="g">
+						{{g[0]}} {{g[1]}} 
+					</view>
+				</view>
+        <view class="row">
+					<view class="tag">国家：</view><view class="casts" wx:for="{{list.countries}}" wx:for-item="c">
+						{{c}}
+					</view>
+				</view>
+      </view>
+    </view>
+  </view>
+  <view class="summary">
+    <view class="summary-title">剧情简介:</view>
+    <view class="summary-content">{{list.summary}}</view>
+  </view>
+</view>
