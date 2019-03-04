@@ -1,4 +1,5 @@
-var API_URI = 'https://api.douban.com/v2/movie'
+// const API_URI = 'https://api.douban.com/v2/movie'
+const API_URI = 'https://douban.uieee.com/v2/movie'
 
 function fetchApi(type,params) {
 	return new Promise((resolve,reject)=>{
